@@ -17,8 +17,11 @@ docker run \
         --volume $workdir/containerfiles/$site:/tmp \
         internetsystemsconsortium/bind9:9.18
 
+# docker exec $site cp /tmp/named.conf.local /etc/bind/
+# docker exec $site cp /tmp/db.example.com /etc/bind/
+# docker exec $site cp /tmp/named.conf.options /etc/bind/
 docker exec $site cp /tmp/named.conf.local /etc/bind/
-docker exec $site cp /tmp/db.example.com /etc/bind/
+docker exec $site cp /tmp/db.a10.klouda.lab /etc/bind/
 docker exec $site cp /tmp/named.conf.options /etc/bind/
 docker exec $site service named restart >/dev/null 2>&1
 
@@ -37,7 +40,11 @@ docker run \
         --volume $workdir/containerfiles/$site:/tmp \
         internetsystemsconsortium/bind9:9.18
 
+# docker exec $site cp /tmp/named.conf.local /etc/bind/
+# docker exec $site cp /tmp/db.example.com /etc/bind/
+# docker exec $site cp /tmp/named.conf.options /etc/bind/
 docker exec $site cp /tmp/named.conf.local /etc/bind/
-docker exec $site cp /tmp/db.example.com /etc/bind/
+docker exec $site cp /tmp/db.a10.klouda.lab /etc/bind/
 docker exec $site cp /tmp/named.conf.options /etc/bind/
 docker exec $site service named restart >/dev/null 2>&1
+docker ps
