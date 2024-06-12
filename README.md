@@ -12,7 +12,11 @@ Docker networks are required. The host this runs on has multiple interfaces in V
 <br><br>
 Scripts will need to be modified for your local env.
 <br><br>
-To start and stop GSLB DNS respectively, just run ./gslb-start.sh or gslb-stop.sh
+To start and stop GSLB DNS respectively, just run:<br>
+./gslb-start.sh<br>
+or<br>
+gslb-stop.sh
+<br>
 Web servers require a number, but will start the number for each site (DEN and SoCal, in my example).
 <br>
 ./start-all-webservers.sh 5 (Starts 5 web servers in each site, with corresponding IPs)
