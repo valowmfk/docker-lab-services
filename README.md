@@ -15,7 +15,7 @@ Scripts will need to be modified for your local env.
 To start and stop GSLB DNS respectively, just run:<br>
 ./gslb-start.sh<br>
 or<br>
-gslb-stop.sh
+./gslb-stop.sh
 <br>
 Web servers require a number, but will start the number for each site (DEN and SoCal, in my example).
 <br>
