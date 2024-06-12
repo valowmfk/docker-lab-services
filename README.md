@@ -1,5 +1,5 @@
 # docker-lab-services
-HTTP and DNS/GSLB Lab Services Inside Docker - A10 Networks
+<bold>HTTP and DNS/GSLB Lab Services Inside Docker - A10 Networks</bold>
 <br><br>
 Scripts assume you're running them from the ~/ directory.
 <br><br>
